@@ -1,4 +1,19 @@
 # GCIS-Calibration
-This is a data-driven calibration part of GCIS.
+The open source code (in C++), as well as an executable file, 
+are provided in this dir. 
 
-python is called in cpp to solve the ELM.
+**************************
+The  "Realease.7z" includes the executable file, necessary dlls and calibration data.
+
+The image points and spatial points of markers are decoded, the results are stored in "./Release/data/ImgInfo.xml" and "./Release/data/PtsInfo.xml" specificly.
+
+You can just open the "./Release/GCIS_calibration_opensource.exe" and input the data path "./data" to test the calibration code.
+
+**************************
+The  "GCIS_calibration_opensource.7z" includes the source code of GCIS calibration.
+
+It needs some necessary libs to build the source code, including:
+ceres
+eigen
+opencv
+python (with numpy)
